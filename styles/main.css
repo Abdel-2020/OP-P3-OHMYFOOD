@@ -68,7 +68,7 @@ html {
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 .header__logo {
   font-family: "Shrikhand";
@@ -125,6 +125,7 @@ html {
   margin-right: 0.5rem;
 }
 
+/**Loading Screen**/
 .loader {
   position: fixed;
   height: 100%;
@@ -138,7 +139,7 @@ html {
           animation-delay: 1.75s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  z-index: 10000;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +155,7 @@ html {
 }
 .loader__itemContainer {
   display: flex;
-  width: 5rem;
+  width: 6rem;
   justify-content: space-between;
 }
 .loader__item--1 {
@@ -171,7 +172,8 @@ html {
           animation-delay: 0.5s;
 }
 
-.local {
+/**Location**/
+.location {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
@@ -179,10 +181,10 @@ html {
   font-size: 1.2rem;
   position: relative;
 }
-.local__icon {
+.location__icon {
   margin-right: 1rem;
 }
-.local__text {
+.location__text {
   font-weight: 700;
 }
 
@@ -220,6 +222,7 @@ html {
   color: inherit;
 }
 
+/**Tutorial Section**/
 .tuto {
   padding: 2rem 1rem;
 }
@@ -230,7 +233,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: compteListe;
+  counter-reset: listCount;
 }
 @media (min-width: 64rem) {
   .tuto__steps {
@@ -263,8 +266,8 @@ html {
   margin-bottom: 0;
 }
 .tuto__step::before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
+  counter-increment: listCount 1;
+  content: counter(listCount) " ";
   background: #9356DC;
   height: 1.5rem;
   width: 1.5rem;
@@ -281,10 +284,13 @@ html {
   color: #7e7e7e;
 }
 
+/**RESTAURANT-MENU-CARDS**/
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
+
+/**RESTAURANT-MENU-CARDS**/
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -354,6 +360,7 @@ html {
   background-color: white !important;
 }
 
+/**HEADER-SECTION**/
 .header--withBackArrow {
   position: relative;
 }
@@ -379,12 +386,14 @@ html {
      object-fit: cover;
 }
 
+/**MENU**/
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  /**LIKES**/
 }
 .menu__header {
   padding: 1rem 2rem 0 1rem;
