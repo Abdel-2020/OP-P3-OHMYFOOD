@@ -357,7 +357,7 @@ html {
   justify-content: center;
 }
 .card__like {
-  background-color: white !important;
+  background-color: white;
 }
 
 /**HEADER-SECTION**/
