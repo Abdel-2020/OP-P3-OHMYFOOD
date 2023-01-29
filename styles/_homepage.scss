@@ -1,3 +1,5 @@
+/**Loading Screen**/
+
 .loader {
     position: fixed;
     height: 100%;
@@ -8,7 +10,7 @@
     animation: loader 0.01s;
     animation-delay: 1.75s;
     animation-fill-mode: both;
-    z-index: 10000;
+    z-index: 2;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -22,7 +24,7 @@
   
       &Container {
         display: flex;
-        width: 5rem;
+        width: 6rem;
         justify-content: space-between;
       }
   
@@ -44,7 +46,8 @@
     
   }
   
-  .local {
+  /**Location**/
+  .location {
     display: flex;
     justify-content: center;
     padding: 1.25rem $appPadding;
@@ -60,6 +63,8 @@
       font-weight: 700;
     }
   }
+
+  
   
   .hero {
     padding: 2rem;
@@ -79,6 +84,8 @@
       @include button(primary);
     }
   }
+
+  /**Tutorial Section**/
   
   .tuto {
     padding: ( $appPadding + 1rem ) $appPadding;
@@ -91,7 +98,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      counter-reset: compteListe;
+      counter-reset: listCount;
   
       @media (min-width:64rem) {
         display: flex;
@@ -126,8 +133,8 @@
       }
   
       &::before {
-        counter-increment: compteListe 1;
-        content: counter(compteListe) " ";
+        counter-increment:listCount 1;
+        content: counter(listCount) " ";
         background: $color-primary;
         height: 1.5rem;
         width: 1.5rem;
@@ -147,15 +154,17 @@
     }
   }
   
+  /**RESTAURANT-MENU-CARDS**/
+
+
   .restaurants {
     background-color: #f6f6f6;
     padding: ($appPadding + 1rem) $appPadding;
   
-    &__title {
-  
-    }
   }
   
+    /**RESTAURANT-MENU-CARDS**/
+
   .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

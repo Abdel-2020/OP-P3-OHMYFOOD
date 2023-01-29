@@ -1,3 +1,6 @@
+
+/**HEADER-SECTION**/
+
 .header {
   &--withBackArrow {
     position: relative;
@@ -24,6 +27,8 @@
   width: 100%;
   object-fit: cover;
 }
+
+/**MENU**/
 
 .menu {
   margin-top: -4rem;
@@ -73,6 +78,8 @@
     }
   }
 
+/**LIKES**/
+
   &__like {
     transition-duration: .25s;
     background-color: #f6f6f6;
@@ -95,6 +102,8 @@
     }
   }
 }
+
+
 
 .submenus {
   display: grid;
