@@ -55,18 +55,15 @@
     transform: translateY(0);
   }
 }
-body, html {
+body,
+html {
   margin: 0;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-}
-
+/**Button Styling**/
+/**HEADER-SECTION**/
 .header {
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -79,6 +76,14 @@ body, html {
   text-align: center;
 }
 
+/**MENU-SECTION**/
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+/**FOOTER-SECTION**/
 .footer {
   background-color: #353535;
 }
@@ -99,13 +104,13 @@ body, html {
   padding: 0;
   margin: 0;
 }
-.footer__listElt {
+.footer__listItem {
   margin: 0.5rem 0;
 }
-.footer__listElt:first-child {
+.footer__listItem:first-child {
   margin-top: 0;
 }
-.footer__listElt:last-child {
+.footer__listItem:last-child {
   margin-bottom: 0;
 }
 .footer__link {
@@ -197,7 +202,7 @@ body, html {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
@@ -595,7 +600,7 @@ body, html {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);

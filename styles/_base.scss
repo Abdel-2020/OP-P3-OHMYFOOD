@@ -1,16 +1,25 @@
+@use "sass:color";
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$appPadding: 1rem;
 
 
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
+/**Button Styling**/
+
 @mixin button($type) {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
@@ -30,16 +39,7 @@ body, html {
   }
 }
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$appPadding: 1rem;
-
-.container {
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-}
+/**HEADER-SECTION**/
 
 .header {
   padding: 1rem $appPadding;
@@ -54,15 +54,26 @@ $appPadding: 1rem;
   }
 }
 
+/**MENU-SECTION**/
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+
+/**FOOTER-SECTION**/
+
 .footer {
   background-color: #353535;
-  
+
   .container {
     display: flex;
     flex-direction: column;
     padding: $appPadding;
   }
-  
+
   &__logo {
     color: white;
     font-family: "Shrikhand";
@@ -77,7 +88,7 @@ $appPadding: 1rem;
     margin: 0;
   }
 
-  &__listElt {
+  &__listItem {
     margin: 0.5rem 0;
 
     &:first-child {
