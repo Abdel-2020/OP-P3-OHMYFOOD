@@ -107,7 +107,6 @@
 
 .submenus {
   display: grid;
-
   @media (min-width:64rem) {
     grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
@@ -148,9 +147,8 @@
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear .7s; /**SPAWN ANIMATION**/
-  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-timing-function: ease;
   animation-fill-mode: both;
-  transform: scale(0);
   max-width: 100%;
 
   &__header {
@@ -207,7 +205,7 @@
     align-items:center;
     justify-content:center;
     border-radius: 100px;
-    transform: rotate(180deg);
+    transform: rotate(-360deg);
     transition-duration: 0.6s;
 
   }
@@ -221,9 +219,12 @@
   }
 }
 
+/**ITERATE THROUGH MEALS**/
+/**@for <variable> from <expression> to <expression> { ... }**/
 @for $i from 0 to 9 {
+   /**Calls the delay class and uses the parameter from the current for loop iteration**/
   .delay-#{$i} {
-    animation-delay:  #{$i/10}s;
+    animation-delay:  #{$i/6}s;
   }
 }
 

@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @-webkit-keyframes itemAppear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(2rem);
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 @keyframes itemAppear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(2rem);
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 @-webkit-keyframes loader {
@@ -492,11 +496,10 @@ html {
   cursor: pointer;
   -webkit-animation: itemAppear 0.7s;
           animation: itemAppear 0.7s; /**SPAWN ANIMATION**/
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  transform: scale(0);
   max-width: 100%;
   /**MENU-ITEM-CONFIRMATION**/
 }
@@ -545,7 +548,7 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(-360deg);
   transition-duration: 0.6s;
 }
 .menuItem:hover .menuItem__wrapIcon {
@@ -555,49 +558,60 @@ html {
   color: #99E2D0;
 }
 
+/**ITERATE THROUGH MEALS**/
+/**@for <variable> from <expression> to <expression> { ... }**/
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-0 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1666666667s;
+          animation-delay: 0.1666666667s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.3333333333s;
+          animation-delay: 0.3333333333s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.delay-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.delay-5 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
+.delay-4 {
+  -webkit-animation-delay: 0.6666666667s;
+          animation-delay: 0.6666666667s;
+}
+
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
+.delay-5 {
+  -webkit-animation-delay: 0.8333333333s;
+          animation-delay: 0.8333333333s;
+}
+
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 1.1666666667s;
+          animation-delay: 1.1666666667s;
 }
 
+/**Calls the delay class and uses the parameter from the current for loop iteration**/
 .delay-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 1.3333333333s;
+          animation-delay: 1.3333333333s;
 }
 
 .wrapBtn {
